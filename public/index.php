@@ -22,6 +22,5 @@ $router
 
 (new App(
     $router,
-    ['uri' => $_SERVER['REQUEST_URI'], 'method' => $_SERVER['REQUEST_METHOD']],
-    new Config($_ENV)
+    ['uri' => $_SERVER['REQUEST_URI'], 'method' => $_SERVER['REQUEST_METHOD']]
 ))->run();
